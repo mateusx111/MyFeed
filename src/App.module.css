@@ -1,12 +1,12 @@
 .wrapper {
-    max-width: 70rem;
-    margin: 2rem auto;
-    padding: 0 1rem;
+    max-width: 70rem; /*Soma da sibear + conteúdo dá 1020px. dividir por 16px resultado 70rem */
+    margin: 2rem/*em cima e embaixo*/ auto/*laterais*/;
+    padding: 0 1rem/*se diminuir a tela para menos de 70rem o contudo vai ter um espaço de 16px = 1 rem*/;
 
     display: grid;
-    grid-template-columns: 256px 1fr;
-    gap: 2rem;
-    align-items: flex-start;
+    grid-template-columns: 256px/*sidebar tamnho fixo*/ 1fr/*conteúdo vai ter um tamanho flexivel*/; 
+    gap: 2rem; /*espassamento entre as colunas*/
+    align-items: flex-start;/*sidebar e main ficaram alinhados no topo*/
 }
 
 @media (max-width: 768px) {

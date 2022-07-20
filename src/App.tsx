@@ -41,15 +41,15 @@ export function App() {
 
   return (
     <div>
-      <Header />
+      <Header />  {/*component Header */}
 
       <div className={styles.wrapper}>
-        <Sidebar />
+        <Sidebar />  {/* component sidebar*/}
 
         <main>
           {posts.map(post => {   // se usar o forEach não tem nehum retorno
             return (
-              <Post
+              <Post /* Component post */
                 key={post.id}
                 author={post.author}
                 content={post.content}

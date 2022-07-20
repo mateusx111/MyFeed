@@ -24,7 +24,9 @@ interface PostProps {
     content: Content[];
 }
 
-export function Post({ author, publishedAt, content }: PostProps) {
+export function Post({ author, publishedAt, content // são parâmetros da função post 
+
+}: PostProps) { 
     const [comments, setComments] = useState([
         'Post muito bacana, hein?'
     ])
@@ -67,8 +69,8 @@ export function Post({ author, publishedAt, content }: PostProps) {
     return (
         <article className={styles.post}>
             <header>
-                <div className={styles.author}>
-                    <Avatar src={author.avatarUrl} />
+                <div className={styles.author}> 
+                    <Avatar src={author.avatarUrl} />{/* para acessar a propriedade é preciso coloca-la em {} */}
                     <div className={styles.authorInfo}>
                         <strong>{author.name}</strong>
                         <span>{author.role}</span>

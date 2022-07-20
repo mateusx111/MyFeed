@@ -1,7 +1,8 @@
+/*Mentalizar e visualuzar a estrutura da sidebar */
 .sidebar {
   background: var(--white);
   border-radius: 8px;
-  overflow: hidden;
+  overflow: hidden;/*faz com que os elementos dentro só vão ocupar o tamnho da sidebar */
 }
 
 .cover {
